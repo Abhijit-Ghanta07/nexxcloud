@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
     <link rel="shortcut icon" href="./assets/fav.png" type="image/x-icon" />
+    <!-- link outer resources -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- stylesheet -->
     <link rel="stylesheet" href="style.css" />
     <title>NexaCloud - For Storage All You Needed</title>
   </head>
@@ -16,10 +19,12 @@
     <header>
       <div class="container">
         <nav>
-          <div class="logo">
+          <div class="logo" data-aos="fade-right">
             <span><img src="./assets/logo.png" alt="logo" /></span>NexxCloud
           </div>
-          <div class="ham"><i class="bx bx-menu bx-md"></i></div>
+          <div class="ham" data-aos="fade-left">
+            <i class="bx bx-menu bx-md"></i>
+          </div>
           <div class="mobile-nav">
             <i class="bx bx-x bx-md" id="btn_close"></i>
             <ul>
@@ -35,16 +40,16 @@
     </header>
     <div class="hero">
       <div class="container">
-        <h1 class="hero-title">
+        <h1 class="hero-title" data-aos="fade-down">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
           praesentium?
         </h1>
-        <p class="hero-text">
+        <p class="hero-text" data-aos="fade-down">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
           doloribus maxime delectus quaerat necessitatibus a, perspiciatis ullam
           tempora omnis laudantium.
         </p>
-        <div class="btn-group">
+        <div class="btn-group" data-aos="fade-right">
           <button class="btn btn-active">Start For Free</button>
           <button class="btn btn-outline">Pay As You Go</button>
         </div>
@@ -54,15 +59,15 @@
     <section class="section servics">
       <div class="container">
         <div class="box">
-          <h3 class="section-title">
+          <h3 class="section-title" data-aos="fade-down">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           </h3>
-          <p class="section-text">
+          <p class="section-text" data-aos="fade-down">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus
             ipsa minima, iusto totam laudantium quidem.
           </p>
         </div>
-        <div class="video-box">
+        <div class="video-box" data-aos="zoom-in">
           <p>Lorem ipsum dolor sit amet.</p>
           <div class="play">
             <span><i class="bx bx-play bx-md"></i></span>
@@ -107,15 +112,15 @@
     </section>
     <section class="section product">
       <div class="container">
-        <h2 class="section-title">
+        <h2 class="section-title" data-aos="fade-down">
           Lorem ipsum dolor, sit amet consectetur adipisicing.
         </h2>
-        <p class="section-text">
+        <p class="section-text" data-aos="fade-down">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
           repudiandae quisquam iusto tenetur rerum mollitia?
         </p>
         <div class="scroll-menu">
-          <div class="scroll-wrapper">
+          <div class="scroll-wrapper" data-aos="fade-right">
             <button class="btn active">Featured product</button>
             <button class="btn">Financial Manegment</button>
             <button class="btn">Analytic</button>
@@ -162,29 +167,31 @@
     </section>
     <section class="section solution">
       <div class="container">
-        <div class="solution-video-box"></div>
-        <h2 class="section-title">
+        <div class="solution-video-box" data-aos="zoom-in"></div>
+        <h2 class="section-title" data-aos="fade-right">
           Data Empowerment thourgh robust database Solution
         </h2>
-        <p class="section-text">
+        <p class="section-text" data-aos="fade-right">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque natus
           maiores architecto quas veniam quos nostrum, aperiam corrupti dolorum
           sint!
         </p>
-        <button class="btn btn-outline">Learn More</button>
+        <button class="btn btn-outline" data-aos="fade-right">
+          Learn More
+        </button>
       </div>
     </section>
     <section class="section review">
       <div class="container">
-        <h2 class="section-title">
+        <h2 class="section-title" data-aos="fade-down">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         </h2>
-        <p class="section-text">
+        <p class="section-text" data-aos="fade-down">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci qui
           ducimus assumenda praesentium aliquam ex veniam dolorem placeat minus
           modi!
         </p>
-        <div class="review-video-box">
+        <div class="review-video-box" data-aos="zoom-in">
           <input
             type="text"
             class="input"
@@ -194,6 +201,9 @@
         </div>
       </div>
     </section>
+
+    <!-- scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

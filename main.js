@@ -1,3 +1,8 @@
+AOS.init({
+  once: true,
+  duration: 800,
+});
+
 const hamEl = document.querySelector(".ham");
 const navList = document.querySelector(".mobile-nav");
 const closeBtn = document.querySelector("#btn_close");
